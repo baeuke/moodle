@@ -1,5 +1,3 @@
-
-
 const form = document.getElementById('comp-form');
 
 const ha = document.getElementById('hidden-alert');
@@ -8,16 +6,14 @@ form.addEventListener('submit', function(e) {
    e.preventDefault();
 
    const payload = new FormData(form) // makes array of arrays
-   console.log(...payload)
-
-   
-   let obj;
+   // console.log(...payload)
 
    fetch('https://ggdm340m97.execute-api.eu-central-1.amazonaws.com', {
       method: "POST",
       body: payload,
    })
    .then(res => {
+      console.log("result: ", res)
       if (res.status === 200) {
          console.log("WOOOW")
          location.replace("./haha.html");
@@ -28,19 +24,3 @@ form.addEventListener('submit', function(e) {
    })
    .catch(err => console.log(err));
 })
-
-// http://192.168.0.133:3001/post
-
-// async function theForm(e) {
-//    e.preventDefault();
-//    const payload = new FormData(form)
-
-//    const res = await fetch('http://192.168.0.133:3001/post', {
-//       method: "POST",
-//       body: payload,
-//    })
-
-//    obj = await res.json();
-
-//    console.log(obj);
-// }
