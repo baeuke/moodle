@@ -27,9 +27,6 @@ form.addEventListener('submit', function(e) {
       }
    })
    .catch(err => console.log(err));
-
-   // if (obj === "ok") {
-   // }
 })
 
 // http://192.168.0.133:3001/post
