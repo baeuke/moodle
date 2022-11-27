@@ -13,7 +13,7 @@ form.addEventListener('submit', function(e) {
    
    let obj;
 
-   fetch('http://192.168.0.133:3001/post', {
+   fetch('https://ggdm340m97.execute-api.eu-central-1.amazonaws.com', {
       method: "POST",
       body: payload,
    })
